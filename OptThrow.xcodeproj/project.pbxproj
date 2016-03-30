@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D65C4C891CAB804D008BC376 /* OptThrow.h in Headers */ = {isa = PBXBuildFile; fileRef = D65C4C881CAB804D008BC376 /* OptThrow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65C4C901CAB804E008BC376 /* OptThrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65C4C851CAB804D008BC376 /* OptThrow.framework */; };
+		D65C4C951CAB804E008BC376 /* OptThrowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C4C941CAB804E008BC376 /* OptThrowTests.swift */; };
+		D65C4CA01CAB8064008BC376 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C4C9F1CAB8064008BC376 /* Optional.swift */; };
+		D65C4CB01CABDED2008BC376 /* OptThrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65C4CA61CABDED1008BC376 /* OptThrow.framework */; };
+		D65C4CBD1CABDF68008BC376 /* OptThrowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C4C941CAB804E008BC376 /* OptThrowTests.swift */; };
+		D65C4CBE1CABDF6C008BC376 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C4C9F1CAB8064008BC376 /* Optional.swift */; };
+		D65C4CBF1CABDF74008BC376 /* OptThrow.h in Headers */ = {isa = PBXBuildFile; fileRef = D65C4C881CAB804D008BC376 /* OptThrow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65C4CCF1CABE089008BC376 /* OptThrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D65C4CC51CABE089008BC376 /* OptThrow.framework */; };
+		D65C4CE91CABE142008BC376 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C4C9F1CAB8064008BC376 /* Optional.swift */; };
+		D65C4CEA1CABE143008BC376 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C4C9F1CAB8064008BC376 /* Optional.swift */; };
+		D65C4CEB1CABE148008BC376 /* OptThrow.h in Headers */ = {isa = PBXBuildFile; fileRef = D65C4C881CAB804D008BC376 /* OptThrow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65C4CEC1CABE149008BC376 /* OptThrow.h in Headers */ = {isa = PBXBuildFile; fileRef = D65C4C881CAB804D008BC376 /* OptThrow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D65C4CED1CABE162008BC376 /* OptThrowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C4C941CAB804E008BC376 /* OptThrowTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D65C4C911CAB804E008BC376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65C4C7C1CAB804D008BC376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65C4C841CAB804D008BC376;
+			remoteInfo = OptThrow;
+		};
+		D65C4CB11CABDED2008BC376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65C4C7C1CAB804D008BC376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65C4CA51CABDED1008BC376;
+			remoteInfo = "OptThrow-iOS";
+		};
+		D65C4CD01CABE089008BC376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D65C4C7C1CAB804D008BC376 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D65C4CC41CABE089008BC376;
+			remoteInfo = "OptThrow-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D65C4C851CAB804D008BC376 /* OptThrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OptThrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C4C881CAB804D008BC376 /* OptThrow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptThrow.h; sourceTree = "<group>"; };
+		D65C4C8A1CAB804D008BC376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65C4C8F1CAB804E008BC376 /* OptThrowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptThrowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C4C941CAB804E008BC376 /* OptThrowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptThrowTests.swift; sourceTree = "<group>"; };
+		D65C4C961CAB804E008BC376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65C4C9F1CAB8064008BC376 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
+		D65C4CA61CABDED1008BC376 /* OptThrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OptThrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C4CAF1CABDED2008BC376 /* OptThrowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptThrowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C4CC51CABE089008BC376 /* OptThrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OptThrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C4CCE1CABE089008BC376 /* OptThrowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptThrowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65C4CE11CABE099008BC376 /* OptThrow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OptThrow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D65C4C811CAB804D008BC376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4C8C1CAB804E008BC376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4C901CAB804E008BC376 /* OptThrow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CA21CABDED1008BC376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CAC1CABDED2008BC376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CB01CABDED2008BC376 /* OptThrow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CC11CABE089008BC376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CCB1CABE089008BC376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CCF1CABE089008BC376 /* OptThrow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CDD1CABE099008BC376 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D65C4C7B1CAB804D008BC376 = {
+			isa = PBXGroup;
+			children = (
+				D65C4C871CAB804D008BC376 /* OptThrow */,
+				D65C4C931CAB804E008BC376 /* OptThrowTests */,
+				D65C4C861CAB804D008BC376 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D65C4C861CAB804D008BC376 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D65C4C851CAB804D008BC376 /* OptThrow.framework */,
+				D65C4C8F1CAB804E008BC376 /* OptThrowTests.xctest */,
+				D65C4CA61CABDED1008BC376 /* OptThrow.framework */,
+				D65C4CAF1CABDED2008BC376 /* OptThrowTests.xctest */,
+				D65C4CC51CABE089008BC376 /* OptThrow.framework */,
+				D65C4CCE1CABE089008BC376 /* OptThrowTests.xctest */,
+				D65C4CE11CABE099008BC376 /* OptThrow.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D65C4C871CAB804D008BC376 /* OptThrow */ = {
+			isa = PBXGroup;
+			children = (
+				D65C4C881CAB804D008BC376 /* OptThrow.h */,
+				D65C4C9F1CAB8064008BC376 /* Optional.swift */,
+				D65C4C8A1CAB804D008BC376 /* Info.plist */,
+			);
+			path = OptThrow;
+			sourceTree = "<group>";
+		};
+		D65C4C931CAB804E008BC376 /* OptThrowTests */ = {
+			isa = PBXGroup;
+			children = (
+				D65C4C941CAB804E008BC376 /* OptThrowTests.swift */,
+				D65C4C961CAB804E008BC376 /* Info.plist */,
+			);
+			path = OptThrowTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D65C4C821CAB804D008BC376 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4C891CAB804D008BC376 /* OptThrow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CA31CABDED1008BC376 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CBF1CABDF74008BC376 /* OptThrow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CC21CABE089008BC376 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CEB1CABE148008BC376 /* OptThrow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CDE1CABE099008BC376 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CEC1CABE149008BC376 /* OptThrow.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D65C4C841CAB804D008BC376 /* OptThrow-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C4C991CAB804E008BC376 /* Build configuration list for PBXNativeTarget "OptThrow-OSX" */;
+			buildPhases = (
+				D65C4C801CAB804D008BC376 /* Sources */,
+				D65C4C811CAB804D008BC376 /* Frameworks */,
+				D65C4C821CAB804D008BC376 /* Headers */,
+				D65C4C831CAB804D008BC376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OptThrow-OSX";
+			productName = OptThrow;
+			productReference = D65C4C851CAB804D008BC376 /* OptThrow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D65C4C8E1CAB804E008BC376 /* OptThrowTests-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C4C9C1CAB804E008BC376 /* Build configuration list for PBXNativeTarget "OptThrowTests-OSX" */;
+			buildPhases = (
+				D65C4C8B1CAB804E008BC376 /* Sources */,
+				D65C4C8C1CAB804E008BC376 /* Frameworks */,
+				D65C4C8D1CAB804E008BC376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65C4C921CAB804E008BC376 /* PBXTargetDependency */,
+			);
+			name = "OptThrowTests-OSX";
+			productName = OptThrowTests;
+			productReference = D65C4C8F1CAB804E008BC376 /* OptThrowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D65C4CA51CABDED1008BC376 /* OptThrow-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C4CB71CABDED2008BC376 /* Build configuration list for PBXNativeTarget "OptThrow-iOS" */;
+			buildPhases = (
+				D65C4CA11CABDED1008BC376 /* Sources */,
+				D65C4CA21CABDED1008BC376 /* Frameworks */,
+				D65C4CA31CABDED1008BC376 /* Headers */,
+				D65C4CA41CABDED1008BC376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OptThrow-iOS";
+			productName = "OptThrow-iOS";
+			productReference = D65C4CA61CABDED1008BC376 /* OptThrow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D65C4CAE1CABDED2008BC376 /* OptThrowTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C4CBA1CABDED2008BC376 /* Build configuration list for PBXNativeTarget "OptThrowTests-iOS" */;
+			buildPhases = (
+				D65C4CAB1CABDED2008BC376 /* Sources */,
+				D65C4CAC1CABDED2008BC376 /* Frameworks */,
+				D65C4CAD1CABDED2008BC376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65C4CB21CABDED2008BC376 /* PBXTargetDependency */,
+			);
+			name = "OptThrowTests-iOS";
+			productName = "OptThrow-iOSTests";
+			productReference = D65C4CAF1CABDED2008BC376 /* OptThrowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D65C4CC41CABE089008BC376 /* OptThrow-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C4CD61CABE089008BC376 /* Build configuration list for PBXNativeTarget "OptThrow-tvOS" */;
+			buildPhases = (
+				D65C4CC01CABE089008BC376 /* Sources */,
+				D65C4CC11CABE089008BC376 /* Frameworks */,
+				D65C4CC21CABE089008BC376 /* Headers */,
+				D65C4CC31CABE089008BC376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OptThrow-tvOS";
+			productName = "OptThrow-tvOS";
+			productReference = D65C4CC51CABE089008BC376 /* OptThrow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D65C4CCD1CABE089008BC376 /* OptThrowTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C4CD91CABE089008BC376 /* Build configuration list for PBXNativeTarget "OptThrowTests-tvOS" */;
+			buildPhases = (
+				D65C4CCA1CABE089008BC376 /* Sources */,
+				D65C4CCB1CABE089008BC376 /* Frameworks */,
+				D65C4CCC1CABE089008BC376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D65C4CD11CABE089008BC376 /* PBXTargetDependency */,
+			);
+			name = "OptThrowTests-tvOS";
+			productName = "OptThrow-tvOSTests";
+			productReference = D65C4CCE1CABE089008BC376 /* OptThrowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D65C4CE01CABE099008BC376 /* OptThrow-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D65C4CE61CABE099008BC376 /* Build configuration list for PBXNativeTarget "OptThrow-watchOS" */;
+			buildPhases = (
+				D65C4CDC1CABE099008BC376 /* Sources */,
+				D65C4CDD1CABE099008BC376 /* Frameworks */,
+				D65C4CDE1CABE099008BC376 /* Headers */,
+				D65C4CDF1CABE099008BC376 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OptThrow-watchOS";
+			productName = "OptThrow-watchOS";
+			productReference = D65C4CE11CABE099008BC376 /* OptThrow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D65C4C7C1CAB804D008BC376 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = koherent.org;
+				TargetAttributes = {
+					D65C4C841CAB804D008BC376 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D65C4C8E1CAB804E008BC376 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D65C4CA51CABDED1008BC376 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D65C4CAE1CABDED2008BC376 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D65C4CC41CABE089008BC376 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D65C4CCD1CABE089008BC376 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					D65C4CE01CABE099008BC376 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = D65C4C7F1CAB804D008BC376 /* Build configuration list for PBXProject "OptThrow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D65C4C7B1CAB804D008BC376;
+			productRefGroup = D65C4C861CAB804D008BC376 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D65C4CA51CABDED1008BC376 /* OptThrow-iOS */,
+				D65C4C841CAB804D008BC376 /* OptThrow-OSX */,
+				D65C4CC41CABE089008BC376 /* OptThrow-tvOS */,
+				D65C4CE01CABE099008BC376 /* OptThrow-watchOS */,
+				D65C4CAE1CABDED2008BC376 /* OptThrowTests-iOS */,
+				D65C4C8E1CAB804E008BC376 /* OptThrowTests-OSX */,
+				D65C4CCD1CABE089008BC376 /* OptThrowTests-tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D65C4C831CAB804D008BC376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4C8D1CAB804E008BC376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CA41CABDED1008BC376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CAD1CABDED2008BC376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CC31CABE089008BC376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CCC1CABE089008BC376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CDF1CABE099008BC376 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D65C4C801CAB804D008BC376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CA01CAB8064008BC376 /* Optional.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4C8B1CAB804E008BC376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4C951CAB804E008BC376 /* OptThrowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CA11CABDED1008BC376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CBE1CABDF6C008BC376 /* Optional.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CAB1CABDED2008BC376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CBD1CABDF68008BC376 /* OptThrowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CC01CABE089008BC376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CE91CABE142008BC376 /* Optional.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CCA1CABE089008BC376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CED1CABE162008BC376 /* OptThrowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D65C4CDC1CABE099008BC376 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D65C4CEA1CABE143008BC376 /* Optional.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D65C4C921CAB804E008BC376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65C4C841CAB804D008BC376 /* OptThrow-OSX */;
+			targetProxy = D65C4C911CAB804E008BC376 /* PBXContainerItemProxy */;
+		};
+		D65C4CB21CABDED2008BC376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65C4CA51CABDED1008BC376 /* OptThrow-iOS */;
+			targetProxy = D65C4CB11CABDED2008BC376 /* PBXContainerItemProxy */;
+		};
+		D65C4CD11CABE089008BC376 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D65C4CC41CABE089008BC376 /* OptThrow-tvOS */;
+			targetProxy = D65C4CD01CABE089008BC376 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D65C4C971CAB804E008BC376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D65C4C981CAB804E008BC376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D65C4C9A1CAB804E008BC376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = OptThrow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrow;
+				PRODUCT_NAME = OptThrow;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D65C4C9B1CAB804E008BC376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = OptThrow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrow;
+				PRODUCT_NAME = OptThrow;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D65C4C9D1CAB804E008BC376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OptThrowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrowTests;
+				PRODUCT_NAME = OptThrowTests;
+			};
+			name = Debug;
+		};
+		D65C4C9E1CAB804E008BC376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OptThrowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrowTests;
+				PRODUCT_NAME = OptThrowTests;
+			};
+			name = Release;
+		};
+		D65C4CB81CABDED2008BC376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OptThrow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrow;
+				PRODUCT_NAME = OptThrow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D65C4CB91CABDED2008BC376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OptThrow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrow;
+				PRODUCT_NAME = OptThrow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D65C4CBB1CABDED2008BC376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = OptThrowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrowTests;
+				PRODUCT_NAME = OptThrowTests;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D65C4CBC1CABDED2008BC376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = OptThrowTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrowTests;
+				PRODUCT_NAME = OptThrowTests;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D65C4CD71CABE089008BC376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OptThrow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrow;
+				PRODUCT_NAME = OptThrow;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		D65C4CD81CABE089008BC376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OptThrow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrow;
+				PRODUCT_NAME = OptThrow;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D65C4CDA1CABE089008BC376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OptThrowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrowTests;
+				PRODUCT_NAME = OptThrowTests;
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+			};
+			name = Debug;
+		};
+		D65C4CDB1CABE089008BC376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OptThrowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrowTests;
+				PRODUCT_NAME = OptThrowTests;
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D65C4CE71CABE099008BC376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OptThrow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrow;
+				PRODUCT_NAME = OptThrow;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		D65C4CE81CABE099008BC376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OptThrow/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.koherent.OptThrow;
+				PRODUCT_NAME = OptThrow;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D65C4C7F1CAB804D008BC376 /* Build configuration list for PBXProject "OptThrow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C4C971CAB804E008BC376 /* Debug */,
+				D65C4C981CAB804E008BC376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D65C4C991CAB804E008BC376 /* Build configuration list for PBXNativeTarget "OptThrow-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C4C9A1CAB804E008BC376 /* Debug */,
+				D65C4C9B1CAB804E008BC376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D65C4C9C1CAB804E008BC376 /* Build configuration list for PBXNativeTarget "OptThrowTests-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C4C9D1CAB804E008BC376 /* Debug */,
+				D65C4C9E1CAB804E008BC376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D65C4CB71CABDED2008BC376 /* Build configuration list for PBXNativeTarget "OptThrow-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C4CB81CABDED2008BC376 /* Debug */,
+				D65C4CB91CABDED2008BC376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D65C4CBA1CABDED2008BC376 /* Build configuration list for PBXNativeTarget "OptThrowTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C4CBB1CABDED2008BC376 /* Debug */,
+				D65C4CBC1CABDED2008BC376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D65C4CD61CABE089008BC376 /* Build configuration list for PBXNativeTarget "OptThrow-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C4CD71CABE089008BC376 /* Debug */,
+				D65C4CD81CABE089008BC376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D65C4CD91CABE089008BC376 /* Build configuration list for PBXNativeTarget "OptThrowTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C4CDA1CABE089008BC376 /* Debug */,
+				D65C4CDB1CABE089008BC376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D65C4CE61CABE099008BC376 /* Build configuration list for PBXNativeTarget "OptThrow-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65C4CE71CABE099008BC376 /* Debug */,
+				D65C4CE81CABE099008BC376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D65C4C7C1CAB804D008BC376 /* Project object */;
+}
