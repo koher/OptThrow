@@ -1,6 +1,6 @@
 # OptThrow
 
-_OptThrow_ provides a convenient way to handle optionals with `do`, `try` and `catch`. The `|?` operator throws an `NilError` when the optional value is `nil`.
+_OptThrow_ provides a convenient way to handle optionals with `do`-`try`-`catch`. The `|?` operator throws an `NilError` when the optional value is `nil`.
 
 ```swift
 let a: Int? = Int(aString)
@@ -15,7 +15,7 @@ do {
 
 ## For What?
 
-How can we handle multiple optional values easily?
+Our codes are full of optionals. We need a way to handle multiple optional values easily.
 
 For example, think about decoding a JSON and initialize an instance of the following `Person` type with the decoded values.
 
@@ -35,21 +35,21 @@ let lastName: String? = json["lastName"].string
 let age: Int? = json["age"].int
 ```
 
-We need to unwrap those three optional values to initialize a `Person` instance.
+We need to unwrap those optional values to initialize a `Person` instance.
 
 An easy way is using _optional binding_.
 
 ```swift
 if let firstName = json["firstName"].string,
-  lastName = json["lastName"].string,
-  age = json["age"].int {
+       lastName = json["lastName"].string,
+       age = json["age"].int {
   let person = Person(firstName: firstName, lastName: lastName, age: age)
 } else {
   // Error handling
 }
 ```
 
-But we cannot always bind all optional values at once. We may need some additional operations between binding.
+But we cannot always bind all optional values at once. We may need some additional operations between bindings.
 
 ```swift
 if let firstName = json["firstName"].string {
@@ -71,7 +71,7 @@ if let firstName = json["firstName"].string {
 }
 ```
 
-It is awful. Using `guard` makes it better.
+This nest is awful. Using `guard` makes it better.
 
 ```swift
 guard let firstName = json["firstName"].string else {
@@ -93,9 +93,10 @@ guard let age = json["age"].int else {
 let person = Person(firstName: firstName, lastName: lastName, age: age)
 ```
 
-It is still bad. Error handling cannot be united. `guard` also force us to `return`, `break` or `continue` in its `else` clause. But such jumps are not always available. (Wrapping in a `while true { }` and `break`, or in a closure expression and `return` are available. But I do not want such hacks.)
+But it still has a problem. Codes for error handling cannot be united. Although `guard` also force us to `return`, `break` or `continue` in its `else` clause, such jumps are not always available.
 
-Although we can use nested `flatMap`s, it is too complicated.
+
+Functional ways are also available. One is nested `flatMap`s. But it is too complicated.
 
 ```swift
 let person: Person? = json["firstName"].string.flatMap { firstName in
@@ -107,7 +108,7 @@ let person: Person? = json["firstName"].string.flatMap { firstName in
 }
 ```
 
-Applicative styles is much simpler to write. But they are not flexible and theoritically difficult.
+Applicative styles make the code much simpler. However, they are theoritically difficult and are not flexible.
 
 ```swift
 let person: Person? = curry(Person.init)
@@ -116,7 +117,7 @@ let person: Person? = curry(Person.init)
   <*> json["age"].int
 ```
 
-Something like Haskell's `do` notations are useful and convenient. Swift's `do`, `try` and `catch` are similar to them.
+Something like Haskell's `do` notations are useful.
 
 ```haskell
 sum = do
@@ -124,6 +125,8 @@ sum = do
   b <- toInt bString
   Just (a + b)
 ```
+
+Swift's `do`-`try`-`catch` is similar to it.
 
 ```swift
 let sum: Int?
@@ -136,11 +139,11 @@ do {
 }
 ```
 
-So I wanted to make them available for optional values too.
+So it would be good if it were available for optional values.
 
 _OptThrow_ provides the postfix `|?` operator for optional values, which unwraps the value or throws an `NilError` when the value is `nil`.
 
-Initializing an `Person` instance can be written like the following with the `|?` operator.
+Initializing an `Person` instance can be written using `do`-`try`-`catch` with the `|?` operator.
 
 ```swift
 do {
